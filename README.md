@@ -8,5 +8,7 @@ marmot branch
 陳偉傑、陳鳳庭、吳家瑩
 
 # 隨便錢包
+bang_wallet
+賴永琪、周伯佳、李育綺
 
 # 東吳人錢包
