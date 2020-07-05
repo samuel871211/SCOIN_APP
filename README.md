@@ -2,7 +2,7 @@
 SCOIN_APP
 
 # 中央銀行 Dashboard
-### central-bank 
+### central-bank - Jet Jessie Wells
 
 # 土撥銀行 - 撥蘿包
 marmot branch
