@@ -2,6 +2,8 @@
 SCOIN_APP
 
 # 中央銀行 Dashboard
+central-bank
+簡大為、盧煒中、陳佳淳
 
 # 土撥銀行 - 撥蘿包
 marmot branch
