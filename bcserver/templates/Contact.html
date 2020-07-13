@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>東吳人 - 問題回報</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/static/favicon.ico" rel="shortcut icon">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link type="text/css" rel="stylesheet" href="/static/contact/test2.css">
+    </head>
+        <body background="/static/background.jpg">
+            <div align="center" style="margin-left:30%;margin-right:30%">
+                <button onclick="UserCenter()">會員中心</button>
+                <h3 style="font-family:Microsoft JhengHei">如您對於本網站有任何建議，請立即回報給我們！</h3>
+                <textarea id="title" style="resize:none;border-style:groove;border-color:#babfbd;border-width:1px" rows=2 cols=60 placeholder="意見反饋(限50字以內)"></textarea>
+                <br>
+                <textarea id="description" style="resize:none;border-style:groove;border-color:#babfbd;border-width:1px" rows=16 cols=60 placeholder="詳細描述(限500字以內)"></textarea>
+                <br>
+                <br>
+                <input type="button" onclick="SendAdvise()" value="送出"></button>
+            </div>
+            <script>
+                function UserCenter() {window.location.assign("/UserCenter.html")}
+            </script>
+            <script src="/static/contact/contact.js"></script>
+        </body>
+</html>

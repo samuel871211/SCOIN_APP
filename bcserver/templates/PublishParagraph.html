@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>東吳人 - 論壇 - 發佈文章</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/static/favicon.ico" rel="shortcut icon">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+        <body background="/static/background.jpg">
+            <div align="center" style="margin-left:20%;margin-right:20%">
+                <form>
+                    <select id="ClassList">
+                            <option value="請選擇子版">請選擇子版</option>
+                            <option value="美食">美食</option>
+                            <option value="廢文">廢文</option>
+                            <option value="問題">問題</option>
+                            <option value="創作">創作</option>
+                    </select>
+                </form>
+                <input type="text" id="title" placeholder="標題" style="width:381px">
+                <br>
+                <textarea id="paragraph" style="resize:none" rows="25" cols="50" placeholder="內文..."></textarea>
+                <br>
+                <script src="/static/PublishParagraph/PublishParagraph.js"></script>
+                <button onclick="InsertNewParagraph()">送出</button>
+            </div>
+        </body>
+</html>

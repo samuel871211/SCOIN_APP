@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>東吳人 - 配對</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/static/favicon.ico" rel="shortcut icon">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js"></script>
+    </head>
+        <!-- style="background-repeat:no-repeat;background-position:center;background-size:cover" -->
+        <body background="/static/background.jpg">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <div align="center"><button onclick="UserCenter()">會員中心</button></div>
+            <div align="center">
+                <h2 style="color:blue">想找人聊天，但是又沒機會？</h2>
+                <h2 style="color:blue">生活壓力大，想找人聊聊？</h2>
+                <h2 style="color:blue">不想再一個人度過無數個孤單的夜晚</h2>
+                <h2 style="color:blue">那就快來參與東吳的每日配對吧！</h2>
+                <input type="password" id="password" placeholder="密碼">
+                <br>
+                <button id="JoinDailyPair" onclick="JoinDailyPair()">參與每日配對</button>
+                <button id="EnterChatRoom" onclick="EnterChatRoom()">進入專屬聊天</button>
+                <h2 id="notice"></h2>
+            </div>
+            <script>
+                function UserCenter() {window.location.assign("/UserCenter.html")}
+            </script>
+            <script src="/static/pair/pair.js"></script>
+        </body>
+</html>

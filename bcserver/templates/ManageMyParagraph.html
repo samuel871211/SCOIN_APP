@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>東吳人 - 論壇 - 我的文章</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/static/favicon.ico" rel="shortcut icon">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+        <body background="/static/background.jpg">
+            <div align="center">
+                <button onclick="Back()">論壇首頁</button>
+                <button onclick="UserCenter()">會員中心</button>
+                <button onclick="PublishParagraph()">我想發文</button>
+            </div>
+            <table id="AllParagraph" align="center" style="border:3px #cccccc solid;border-collapse:collapse;table-layout:fixed;word-break:break-all">
+            </table>  
+            <script>
+                function Back() {window.location.assign("/Paragraph.html")}
+                function UserCenter() {window.location.assign("/UserCenter.html")}
+                function PublishParagraph() {window.location.assign("/PublishParagraph.html")}
+            </script>  
+            <script src="/static/ManageMyParagraph/ManageMyParagraph.js"></script>
+        </body>
+</html>

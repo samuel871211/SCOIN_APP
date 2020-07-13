@@ -1,0 +1,141 @@
+<html>
+<head>
+    <title>東吳人 - 遊戲專區</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/static/favicon.ico" rel="shortcut icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body background="/static/background.jpg">
+    <div align="center" style="padding:5px"><button onclick="UserCenter()">會員中心</button></div>
+    <div align="center" style="margin-left:25%;margin-right:25%">
+        <div style="display:inline">
+            <button id="GetInfoGuess" onclick="GetInfo(this.innerHTML)">猜數字</button>
+            <button id="GetInfo539" onclick="GetInfo(this.innerHTML)">今彩539</button>
+            <style>
+                #GetInfoGuess{
+                    width:50%;
+                    padding-top:1px;
+                    padding-bottom:1px;
+                    font-weight:bold;
+                    font-family:Microsoft JhengHei;
+                    font-size:16px;
+                }
+                #GetInfo539{
+                    float:right;
+                    width:50%;
+                    padding-top:1px;
+                    padding-bottom:1px;
+                    font-weight:bold;
+                    font-family:Microsoft JhengHei;
+                    font-size:16px;
+                }
+            </style>
+        </div>
+    </div>
+    
+    <div id="ABGame" align="center" style="display:none">
+        <div id="DetailArea">
+            <b>說明</b>
+            <button id="OpenClose" style="border:0;background:transparent" onclick="OpenClose(this.innerHTML)">
+                <img src="/static/games/open.png" width="12">
+            </button>
+
+            <div id="detail" style="display:none">
+                <b>
+                    系統會隨機生成一個四位數，<br>
+                    且四個位數不會重複。<br>
+                    例如，5667、5555、1233這類數字皆不會出現！<br>
+                    注意，您所猜測的四個位數也不可重複！<br>
+                    您的任務是在10次內(含)猜到這個四位數，<br>
+                    這樣您就可以獲得1顆東吳幣！<br>
+                </b>
+            </div>
+        </div>
+
+        <div id="start">
+            <button id="StartABGame" onclick="start()">開始</button>
+        </div>
+        
+        <div id="AnswerArea" style="display:none">
+            <input id="number" type="number" placeholder="請輸入一個四位數">
+            <button id="go" onclick="guess()">Go!</button>
+        </div>
+        
+        <div id="history" style="display:none">
+            <b>作答紀錄</b>
+        </div>
+    </div>
+
+    <div id="539" align="center" style="display:none">
+        
+        <div id="DetailAreaFor539">
+            <b>說明</b>
+            <button id="OpenCloseFor539" style="border:0;background:transparent" onclick="OpenCloseFor539(this.innerHTML)">
+                <img src="/static/games/open.png" width="12">
+            </button>
+            <div id="DetailFor539" style="display:none">
+                <b>
+                    從1~39的數字中，選不重複的5個數字<br>
+                    每期開獎時，系統將隨機開出5個號碼<br>
+                    活動時間：每日00:00~19:59<br>
+                    開獎時間：每日20:00~23:59<br>
+                    獎勵分級制度:<br>
+                    頭獎--猜中五個數字<br>
+                    貳獎--猜中四個數字<br>
+                    參獎--猜中三個數字<br>
+                    肆獎--猜中兩個數字<br>
+                    伍獎--猜中一個數字<br>
+                    陸獎--猜中零個數字<br>
+                    獲得東吳幣的條件：<br>
+                    1.肆獎以上才有機會可以獲得東吳幣<br>
+                    2.猜對最多獎號的玩家，即可獲得東吳幣1枚<br>
+                    3.如無人在參獎以上，則肆獎只取一人可獲得東吳幣<br>
+                </b>
+            </div>
+        </div>
+
+        <div id="start539">
+            <button id="Start539Btn" onclick="start539()">開始</button>
+            <button id="WinningNumbers" onclick="WinningNumbers()">開獎</button>
+        </div>
+
+        <div id="SelectingArea">   
+        </div>
+        
+        <div id="CheckingArea" style="display:none">
+            <button onclick="confirm(this.innerHTML)">下好離手</button>
+            <button onclick="confirm(this.innerHTML)">重新選擇</button>
+        </div>
+
+        <div id="RankingArea" style="display:none">
+            <div><h1 style="font-family:DFKai-sb">排行榜</h1></div>
+            <div><b id="TodayWinningNumbers" style="font-family:DFKai-sb;font-size:16px"></b></div>
+            <div><b id="YourNumbers" style="font-family:DFKai-sb;font-size:16px"></b></div>
+            <div id="Area5"><h1 style="font-family:DFKai-sb;color:red">頭獎</h1></div>
+            <div id="Area4"><h1 style="font-family:DFKai-sb;color:red">貳獎</h1></div>
+            <div id="Area3"><h1 style="font-family:DFKai-sb;color:red">參獎</h1></div>
+            <div id="Area2"><h1 style="font-family:DFKai-sb;color:red">肆獎</h1></div>
+            <div id="Area1"><h1 style="font-family:DFKai-sb;color:red">伍獎</h1></div>
+            <div id="Area0"><h1 style="font-family:DFKai-sb;color:red">陸獎</h1></div>
+        </div>
+
+    </div>
+    
+    <style>
+        #number::-webkit-outer-spin-button,
+        #number::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+    </style>
+
+    <div id="DisplayArea" align="center" style="display:none"></div>
+    <script>
+    </script>
+    <script>
+        function UserCenter() {window.location.assign("/UserCenter.html")}
+    </script>
+    <script src="/static/games/games.js"></script>
+</body>
+</html>

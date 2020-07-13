@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title id="ParagraphTitle"></title>
+        <meta charset="utf-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/static/favicon.ico" rel="shortcut icon">
+    </head>
+        <body background="/static/background.jpg">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <div align="center">
+                <button onclick="UserCenter()">會員中心</button>
+                <button onclick="ManageMyParagraph()">管理發文</button>
+                <button onclick="Paragraph()">論壇首頁</button>
+            </div>
+            <div id="header" style="margin-left:25%;margin-right:25%;border-width:1px;border-color:#000000;border-style:solid">
+                <h2 id="title" align="left" style="font-family:DFKai-sb"></h2>
+                <font id="author" style="font-family:DFKai-sb;padding-right:185px;padding-left:10px"></font>
+                <font id="time" style="font-family:DFKai-sb;padding-left:185px;padding-right:10px"></font>
+            </div>
+            
+            <div id="body" style="margin-left:25%;margin-right:25%;border-width:1px;border-color:#000000;border-style:solid">
+                <div id="paragraph" style="padding:20px" align="left"></div>
+            </div>
+            
+            <div id="emotion" align="left" style="margin-left:25%;margin-right:25%;border-width:1px;border-color:#000000;border-style:solid">
+                <button id="like_Button" style="border:0;background:transparent" onclick="InsertEmotionToParagraph(this.id)"><img src="/static/paragraph/like.png" width=50></button>
+                <b id="like"></b>
+                <button id="dislike_Button" style="border:0;background:transparent;" onclick="InsertEmotionToParagraph(this.id)"><img src="/static/paragraph/dislike.png" width=50></button>
+                <b id="dislike"></b>
+            </div>
+            
+            <table id="AllResponse" style="border-collapse:collapse;table-layout:fixed;word-break:break-all;margin-left:25%;margin-right:25%;border-width:1px;border-width:1px;border-color:#000000;border-style:solid">
+            </table>
+            
+            <div style="margin-left:25%;margin-right:25%;border-width:1px;border-color:#000000;border-style:solid;padding:5px">
+                <img src="/static/UserCenter/slame.jpg" width="50px">
+                <textarea id="content" placeholder="回覆文章..." cols="65" rows="2" style="resize:none;padding:5px"></textarea>
+                <button style="border-style:none" onclick="InsertNewResponse
+                ()"><img src="/static/SeeParagraph/send.png" style="width:40px"></button>
+            </div>
+            
+            <script src="/static/SeeParagraph/SeeParagraph.js"></script>
+            <script>
+                function UserCenter(){window.location.assign("/UserCenter.html")}
+                function ManageMyParagraph(){window.location.assign("/ManageMyParagraph.html")}
+                function Paragraph(){window.location.assign("/Paragraph.html")}
+            </script>
+        </body>
+</html>

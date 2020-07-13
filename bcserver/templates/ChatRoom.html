@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>東吳人 - 聊天室</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/static/favicon.ico" rel="shortcut icon">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js"></script>
+        <script src="/static/ChatRoom/head.js"></script>
+    </head>
+        <body background="/static/background.jpg">
+            <div id="Phone" style="width:350px;height:500px;border:3px #cccccc;border-style:solid;border-radius:10px">
+                <div id="ShowArea" style="width:350px;height:450px;overflow:auto;background-color:#9eedff;">
+                    <div id="StartFromHere"></div>
+                </div>
+                
+                <div id="InputArea" style="width:350px;height:50px">
+                    <textarea id="SendMessage" style="width:300px;height:50px;resize:none"></textarea>
+                    <button onclick="NewData()" style="border:none;text-align:center;width:48px;height:48px;position:absolute;top:462px;left:312px"><b>Send</b></button>
+                </div>
+            </div>
+            <div style="width:350px">
+                <div align="center" style="margin-top:10px">
+                    <button onclick="LeaveChatRoom()" style="border-radius:10%;padding:5px;font-family:Microsoft JhengHei;font-size:16px;font-weight:bold;border-width:2px;border-style:solid;background-color:rgb(115, 245, 117);border-color:#000000">離開聊天</button>
+                </div>
+            </div>
+            <script src="/static/ChatRoom/GetAllChatHistory.js"></script>
+            <script src="/static/ChatRoom/socket.js"></script>
+        </body>
+</html>

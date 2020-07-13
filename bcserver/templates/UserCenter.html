@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<head>
+	<title>東吳人 - 會員中心</title>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/static/favicon.ico" rel="shortcut icon">
+    <link type="text/css" rel="stylesheet" href="/static/UserCenter/test2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/static/UserCenter/UserCenter.js"></script>
+</head>
+ 
+<body background="/static/background.jpg">
+    <div style="float :left">
+        <input type="button" style="float:right" onclick="LogOut()" value="登出">
+        <input type="button" style="float:right" onclick="mail()" value="我的信箱(00)" id="UnreadMailLength">    
+        <h1 style="font-family:DFKai-sb;"align="center">會員中心</h1>
+
+        <button style="float :left;margin-top:1%;margin-left:1%;width:23%;" onclick="home()">
+            <img src="/static/UserCenter/slame.jpg" style="width:100%">
+            <div style="font-family:DFKai-sb;width:100%;font-size:20px;text-align:left;font-weight:bold" id="username">暱稱：</div>  
+            <div style="font-family:DFKai-sb;width:100%;font-size:20px;text-align:left;font-weight:bold" id="balance">餘額：000</div>
+        </button>
+
+        <button style="float :left;margin-top:1%;margin-left:1%;width:23%" onclick="BountyBoard()">
+            <img src= "/static/UserCenter/money.jpg" style="width:100%">
+            <b>懸賞</b>
+        </button>
+
+        <button style="float :left;margin-top:1%;margin-left:1%;width:23%" onclick="NewList()">
+            <img src= "/static/UserCenter/post.jpg" style="width:100%">
+            <b>發文</b>
+        </button>
+
+        <button style="margin-top:1%;margin-left:1%;width:23%;" onclick="Pair()">
+            <img src= "/static/UserCenter/marry.jpg" style="width:100%">
+            <b>配對</b>
+        </button>
+    </div>
+
+    <div style="width:20%;float :left;margin-top:1%"></div>
+
+    <button style=";width:23%;margin-left:4.65%" onclick="Diary()">
+        <img src= "/static/UserCenter/calendar.jpg" style="width:100%">
+        <b>日誌</b>
+    </button>
+
+    <button style="margin-top:1%;margin-left:1%;width:23%" onclick="Games()">
+        <img src= "/static/UserCenter/style.jpg" style="width:100%">
+        <b>遊戲</b>
+    </button>
+
+    <button style="margin-top:1%;margin-left:1%;width:23%" onclick="Contact()">
+        <img src= "/static/UserCenter/question.jpg" style="width:100%">
+        <b>回報</b>
+    </button>
+    <script>
+        document.getElementById("username").innerHTML = "暱稱："+document.cookie.split("=")[1]
+    </script>
+</body>
+</html>

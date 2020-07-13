@@ -1,0 +1,34 @@
+<html>
+
+<head>
+	<title>東吳人 - 首頁</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/static/favicon.ico" rel="shortcut icon">
+	<link type="text/css" rel="stylesheet" href="/static/init/test2.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/static/init/CheckUsername.js"></script>
+</head>
+<body background="/static/background.jpg">
+	<div id="wrapper" align="center">
+		<h1 style="font-family:DFKai-sb;" >東吳人錢包</h1>	
+
+		<div style="margin-top:5%">
+			<input type="button" value="訪客" onclick="Guest()">
+		</div>
+		
+		<div style="margin-top:1%">
+			<input type="button" value="登入" onclick="Login()">
+		</div>
+
+		<div style="margin-top:1%">
+			<input type="button" value="註冊" onclick="SignUp()">
+		</div>
+	</div>
+	<script>
+        function Login() { window.location.assign("/Login.html") }
+        function SignUp() { window.location.assign("/SignUp.html") }
+        function Guest() { alert("測試期間，訪客功能暫不開放！") } 
+    </script>
+</body>
+</html>

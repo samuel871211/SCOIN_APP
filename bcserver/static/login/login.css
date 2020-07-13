@@ -1,0 +1,75 @@
+html {
+	min-height: 100%;
+}
+
+#wrapper {	
+	padding: 100px 0 0 0px;
+	height: 100%;
+	width: 350px;
+	margin:auto;
+	position: relative;
+}
+
+
+
+#url_user {
+	position:relative;
+	display:block;
+	margin-top:-28px;
+	float:left;
+	padding-right:10px;
+
+}
+
+#username{
+	margin-top:10px;
+	width:276px;
+	height:45px;
+	background:transparent;
+	border:0;
+	font-family:helvetica, sans-serif;
+	font-size:14px;
+	padding-left:20px;
+
+}
+
+#password{
+	margin-top:10px;
+	width:276px;
+	height:45px;
+	background:transparent;
+	border:0;
+	font-family:helvetica, sans-serif;
+	font-size:14px;
+	padding-left:20px;
+
+}
+
+#submit{
+	position:relative;
+	padding:0;
+	margin-top:10px;
+	width:300px;
+	height:40px;
+	border:0;
+}
+#links_right{
+	float:right;
+	position:relative;
+	padding-top:5px;
+	margin-right:25px;
+}
+
+#links_right a{
+	color:#000000;
+	font-size:11px;
+	text-decoration:none;
+	transition: color 0.5s linear;
+	-moz-transition: color 0.5s linear;
+	-webkit-transition: color 0.5s linear;
+	-o-transition: color 0.5s linear;
+}
+
+#links_right a:hover{
+	color:#292929;
+}

@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>東吳人 - 發佈懸賞</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/static/favicon.ico" rel="shortcut icon">
+        <link type="text/css" rel="stylesheet" href="/static/PublishBounty/test2.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+        <body background="/static/background.jpg">
+            <div align="center" style="margin-left:40%;margin-right:30%">
+                <div align="left">
+                    <b style="color:red">＠提醒：✱ = 非必填　✔ = 必填</b><br><br>
+                    <b>✱日期：</b><input type="date" id="date" style="border:none;background:none"><br>
+                    <b>✱時間：</b><input type="time" id="time" style="border:none;background:none;width:139"><br>
+                    <b>✱地點：</b><input type="text" id="place" style="border-width:1px;border-color:#000000;background:none" placeholder="20字以內"><br><br>
+                    <form>
+                        <b>✔分類：</b>
+                        <select id="class" style="width:139;border-width:1px;border-color:#000000;background:none">
+                            <option value="跑腿服務">跑腿服務</option>
+                            <option value="課業問題">課業問題</option>
+                            <option value="其他選項">其他選項</option>
+                        </select>
+                    </form>
+                    <form>
+                        <b>✔獎勵：</b>
+                        <select id="reward" style="width:139;border-width:1px;border-color:#000000;background:none">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </form>
+                    <b>✔內容：</b>
+                    <textarea id="thing" rows="8" style="width:139;border-width:1px;border-color:#000000;background:none;resize:none;vertical-align:top" placeholder="80字以內"></textarea><br><br>
+                    <script src="/static/PublishBounty/PublishBounty.js"></script>
+                    <button id="send" style="width:80%;margin-right:20%" onclick="processdata()">發布懸賞</button>
+                </div>
+            </div>
+            <script src="/static/PublishBounty/GetCurrentTime.js"></script>
+        </body>
+</html>

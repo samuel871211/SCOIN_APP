@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>東吳人 - 註冊</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/static/favicon.ico" rel="shortcut icon">
+        <link type="text/css" rel="stylesheet" href="/static/SignUp/SignUp.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="/static/SignUp/SignUp.js"></script>
+    
+    </head>
+        <body background="/static/background.jpg">
+            <div align="center">
+                <h1 id="check" style="font-family: DFKai-sb">註冊</h1>
+                <div><input type="text" id="username" placeholder="帳號"></div>
+                <div><input type="password" id="password" placeholder="密碼"></div>
+                <div><input type="password" id="confirm" placeholder="再次輸入密碼"></div>
+                <div><input type="text" id="studentid" placeholder="學號"></div>
+                <div><input type="text" id="gmail" placeholder="學校信箱"></div>
+                <form>
+                    學系：<select id = "major">
+                        <option value="巨資">巨資</option>
+                        <option value="資管">資管</option>
+                        <option value="中文">中文</option>
+                        <option value="英文">英文</option>
+                        <option value="德文">德文</option>
+                        <option value="歷史">歷史</option>
+                        <option value="哲學">哲學</option>
+                        <option value="政治">政治</option>
+                        <option value="社會">社會</option>
+                        <option value="社工">社工</option>
+                        <option value="音樂">音樂</option>
+                        <option value="日文">日文</option>
+                        <option value="數學">數學</option>
+                        <option value="物理">物理</option>
+                        <option value="化學">化學</option>
+                        <option value="微物">微物</option>
+                        <option value="心理">心理</option>
+                        <option value="法律">法律</option>
+                        <option value="經濟">經濟</option>
+                        <option value="會計">會計</option>
+                        <option value="企管">企管</option>
+                        <option value="財精">財精</option>
+                    </select>
+                    年級：<select id="grade">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    性別：<select id="gender">
+                        <option value="male">男</option>
+                        <option value="female">女</option>
+                    </select>
+                </form>
+                <button id="NewDID" onclick="NewDID()">送出</button>
+            </div>
+        </body>
+</html>

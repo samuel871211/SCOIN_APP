@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>東吳人 - 登入</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/static/favicon.ico" rel="shortcut icon">
+        <link type="text/css" rel="stylesheet" href="/static/login/login.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="/static/login/login.js"></script>
+    </head>
+        <body background="/static/background.jpg">
+            <div id="wrapper">
+                <h1 style="font-family:DFKai-sb;">登入</h1>
+
+                <input style="font-family:DFKai-sb;border-width:3px;border-style:dashed;border-color:#bdbdbd;padding:5px;"id="username" placeholder="帳號">               
+         
+                <input style="font-family:DFKai-sb;border-width:3px;border-style:dashed;border-color:#bdbdbd;padding:5px" id="password" type="password" placeholder="密碼">
+
+                <button style="background-image:url(/static/login/submit.png)" id="submit" onclick="login()"></button>
+
+                <div id="links_right" style="font-family:DFKai-sb;"><a href="#">忘記密碼</a></div>
+            </div>
+        </body>
+</html>

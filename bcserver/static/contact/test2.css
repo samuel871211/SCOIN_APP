@@ -1,0 +1,39 @@
+input {
+   padding: 10px 20px;
+   border: 1px solid #FFFFFF;
+   background: -webkit-gradient(linear, left top, left bottom, from(#80DE68), to(#80DE68));
+   background: -webkit-linear-gradient(top, #80DE68, #80DE68);
+   background: -moz-linear-gradient(top, #80DE68, #80DE68);
+   background: -ms-linear-gradient(top, #80DE68, #80DE68);
+   background: -o-linear-gradient(top, #80DE68, #80DE68);
+   background-color: #80DE68;
+   box-shadow: 0px 7px 2px -5px #1A1A1A, inset 0px 0px 3px #FFFFFF;
+   -webkit-box-shadow: 0px 7px 2px -5px #1A1A1A, inset 0px 0px 3px #FFFFFF;
+   -moz-box-shadow: 0px 7px 2px -5px #1A1A1A, inset 0px 0px 3px #FFFFFF;
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   border-radius: 15px;
+   text-shadow: #FFFFFF 1px 1px 0px;
+   color: #000000;
+   font-size: 17px;
+   font-family: '微軟正黑體';
+   text-decoration: none;
+   font-weight: bold;
+   -webkit-transition: 0.2s;
+   -moz-transition: 0.2s;
+   -o-transition: 0.2s;
+   cursor: pointer;
+   }
+input :hover {
+   background: none;
+   background-color: #80DE68;
+   box-shadow: 0px 0px 5px 0px #AAAAAA;
+   -webkit-box-shadow: 0px 0px 5px 0px #AAAAAA;
+   -moz-box-shadow: 0px 0px 5px 0px #AAAAAA;
+   border: 1px solid #ffffff;
+   color: #5E2929;
+}
+input :active {
+   top: 1px;
+   position: relative;
+   }

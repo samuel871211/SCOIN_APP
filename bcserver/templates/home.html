@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>東吳人 - 我的小屋</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/static/favicon.ico" rel="shortcut icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body background="/static/background.jpg">
+    <div align="center" style="padding:5px"><button onclick="UserCenter()">會員中心</button></div>
+    <div align="center" style="margin-left:25%;margin-right:25%">
+        <div style="display:inline">
+            <button style="width:15%" onclick="GetInfo(this.innerHTML)">個人資料</button>
+            <button style="float:right;width:14%" onclick="GetInfo(this.innerHTML)">立即轉帳</button>
+            <button style="float:right;width:14%" onclick="GetInfo(this.innerHTML)">造型管理</button>
+            <button style="float:right;width:14%" onclick="GetInfo(this.innerHTML)">信用評價</button>
+            <button style="float:right;width:14%" onclick="GetInfo(this.innerHTML)">發文統計</button>
+            <button style="float:right;width:14%" onclick="GetInfo(this.innerHTML)">留言統計</button>
+            <button style="float:right;width:15%" onclick="GetInfo(this.innerHTML)">帳戶收支</button>
+        </div>
+    </div>
+    <div id="DisplayArea" align="center" style="margin-left:25%;margin-right:25%;border-width:1px;border-color:#0f0f0f;border-style:solid;height:80%">
+        
+        <div id="ATM" style="display:none">
+            <h3 id="balance"></h3>
+            <div><input id="password" type="password" placeholder="password"></div>
+            <div><input id="receiver" type="text" placeholder="receiver"></div>
+            <div><input id="cost" type="number" placeholder="cost"></div>
+            <div><button id="transfer" onclick="transfer()">轉帳</button></div>
+            <h3 id="notice"></h3>
+        </div>
+    </div>
+    <script>
+        function UserCenter() {window.location.assign("/UserCenter.html")}
+    </script>
+    <script src="/static/home/home.js"></script>
+</body>
+</html>

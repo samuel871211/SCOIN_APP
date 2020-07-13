@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>東吳人 - 我的信箱</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/static/favicon.ico" rel="shortcut icon">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+        <body background="/static/background.jpg">
+            <div align="center"><button onclick="UserCenter()">會員中心</button></div>
+            <div align="center">
+                <h1 id="before">網頁載入中，請稍後...</h1>
+                <table id="AllMail" style="border:2px #81858c solid;border-collapse:collapse;table-layout:fixed;word-break:break-all">
+                </table>
+            </div>
+            <script>
+                function UserCenter(){window.location.assign("/UserCenter.html")}
+            </script>
+            <script src="/static/mail/mail.js"></script>
+        </body>
+</html>

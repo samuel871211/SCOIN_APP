@@ -1,0 +1,14 @@
+html {
+	min-height: 100%;
+}
+
+#url{
+	margin-top:5px;
+	width:276px;
+	height:45px;
+	background:transparent;
+	border:0;
+	font-family:helvetica, sans-serif;
+	font-size:14px;
+	padding-left:20px;
+}

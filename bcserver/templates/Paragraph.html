@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>東吳人 - 論壇 - 首頁</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/static/favicon.ico" rel="shortcut icon">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+        <body background="/static/background.jpg">
+            <div align="center"><button onclick="UserCenter()">會員中心</button></div>
+            <div id="SearchingArea" align="center">
+                <input type="text" id="SearchInput" placeholder="輸入文字來尋找文章">
+                <button id="SearchButton" onclick="search()">查詢</button>
+                <form>
+                    <b id="class" style="display:">子版</b>
+                    <select id="ClassList" onchange="ReloadClass()">
+                        <option value="所有">所有</option>
+                        <option value="美食">美食</option>
+                        <option value="廢文">廢文</option>
+                        <option value="問題">問題</option>
+                        <option value="創作">創作</option>
+                        <option value="問題">問題</option>
+                    </select>
+                    <b id="sort" style="display:">排序</b>
+                    <select id="SortList" onchange="ReloadSort()">
+                        <option value="TimeOrder">時間</option>
+                        <option value="LikeCount">讚數</option>
+                        <option value="ResponseCount">回應</option>
+                    </select>
+                </form>
+                <button id="GetMyParagraph" onclick="ManageMyParagraph()">管理我發佈的文章</button>
+            </div>
+            <script>
+                function ManageMyParagraph() {window.location.assign("/ManageMyParagraph.html")}
+                function UserCenter() {window.location.assign("/UserCenter.html")}
+            </script>
+            <table id="AllParagraph" align="center" style="border:3px #cccccc solid;border-collapse:collapse;table-layout:fixed;word-break:break-all">
+            </table>
+            <script src="/static/paragraph/paragraph.js"></script>
+        </body>
+</html>
