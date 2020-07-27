@@ -1,5 +1,0 @@
-sudo apt install python-pip
-pip install flask
-pip install flask_socketio
-pip install pymongo
-pip install eventlet
